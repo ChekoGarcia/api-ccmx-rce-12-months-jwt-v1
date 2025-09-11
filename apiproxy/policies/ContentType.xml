@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Javascript async="false" continueOnError="false" enabled="false" timeLimit="200" name="ContentType">
+    <DisplayName>ContentType</DisplayName>
+    <Properties/>
+    <ResourceURL>jsc://ContentType.js</ResourceURL>
+</Javascript>

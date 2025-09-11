@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="RF-Validation">
+    <DisplayName>RF-Validation</DisplayName>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <StatusCode>400</StatusCode>
+            <ReasonPhrase>Bad Request</ReasonPhrase>
+            <Payload contentType="application/json">
+                {errorMessage}
+            </Payload>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

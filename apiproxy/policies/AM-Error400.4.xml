@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-Error400.4">
+    <DisplayName>AM-Error400.4</DisplayName>
+    <Set>
+        <Headers>
+            <Header name="messageid">{messageid}</Header>
+        </Headers>
+        <Payload contentType="application/json">{"errores":[{"codigo": "400.4","mensaje": "Petición incorrecta el x-signature es requerido"}]}
+        </Payload>
+        <StatusCode>400</StatusCode>
+        <ReasonPhrase>Bad Request</ReasonPhrase>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="response"/>
+</AssignMessage>

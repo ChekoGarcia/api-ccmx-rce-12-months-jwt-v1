@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OASValidation continueOnError="true" enabled="true" name="OAS-RCE-12-MESES-Validation">
+    <DisplayName>OAS-RCE-12-MESES-Validation</DisplayName>
+    <Properties/>
+    <Source>request</Source>
+    <OASResource>oas://OAS-RCE-12-MESES.yaml</OASResource>
+    <Options>
+        <ValidateMessageBody>true</ValidateMessageBody>
+    </Options>
+</OASValidation>

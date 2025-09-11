@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-Response">
+    <DisplayName>AM-response</DisplayName>
+    <Set>
+        <Headers>
+            <Header name="Access-Control-Allow-Origin">*</Header>
+            <Header name="Access-Control-Allow-Headers">content-type, x-api-key</Header>
+            <Header name="Access-Control-Max-Age">3628800</Header>
+            <Header name="Access-Control-Allow-Methods">GET, PUT, POST, DELETE</Header>
+            <Header name="Access-Control-Allow-Credentials">false</Header>
+            <Header name="Access-Control-Expose-Headers">x-signature</Header>
+        </Headers>
+        <Payload contentType="application/json">
+            {response.content}
+        </Payload>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="response"/>
+</AssignMessage>

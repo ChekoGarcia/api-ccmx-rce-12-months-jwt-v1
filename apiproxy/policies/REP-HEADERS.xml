@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RegularExpressionProtection async="false" continueOnError="true" enabled="true" name="REP-HEADERS">
+    <DisplayName>REP-HEADERS</DisplayName>
+    <Properties/>
+    <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    <URIPath>
+        <Pattern>[\s]*(?i)((delete)|(exec)|(drop\s*table)|(insert)|(shutdown)|(update)|(\bor\b))</Pattern>
+    </URIPath>
+    <JSONPayload escapeSlashCharacter="true">
+        <JSONPath>
+            <Expression>$.</Expression>
+            <Pattern>&lt;\s*script\b[^&gt;]*&gt;[^&lt;]+&lt;\s*\/\s*script\s*&gt;
+          </Pattern>
+            <Pattern>n\s*\\\\\s*slash</Pattern>
+            <Pattern>n\s*\/\s*slash</Pattern>
+            <Pattern>n\s*\\"\s*quotes</Pattern>
+            <Pattern>n\s*\\b\s*space</Pattern>
+            <Pattern>n\s*\\f\s*forwardfeed</Pattern>
+            <Pattern>n\s*\\n\s*newline</Pattern>
+            <Pattern>n\s*\\r\s*carria</Pattern>
+            <Pattern>n\s*\\t\s*tab</Pattern>
+            <Pattern>n\s*\\uFFFF\s*hex</Pattern>
+        </JSONPath>
+    </JSONPayload>
+    <Source>request</Source>
+</RegularExpressionProtection>

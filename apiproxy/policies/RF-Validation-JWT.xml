@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="RF-Validation-JWT">
+    <DisplayName>RF-Validation-JWT</DisplayName>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <StatusCode>401</StatusCode>
+            <ReasonPhrase>Unauthorized</ReasonPhrase>
+            <Payload contentType="application/json">
+                 {errorMessage}
+            </Payload>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

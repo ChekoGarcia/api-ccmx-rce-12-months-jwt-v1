@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Javascript async="false" continueOnError="false" enabled="true" timeLimit="200" name="Null-request-param">
+    <DisplayName>Null-request-param</DisplayName>
+    <Properties/>
+    <ResourceURL>jsc://NULL-request-param.js</ResourceURL>
+</Javascript>

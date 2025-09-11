@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="KVM-JWT-LOGIN" mapIdentifier="KVM-JWT-LOGIN">
+    <DisplayName>KVM-JWT-LOGIN</DisplayName>
+    <Get assignTo="private.jwt_secret_key">
+        <Key>
+            <Parameter>jwt_secret_key</Parameter>
+        </Key>
+    </Get>
+    <Scope>environment</Scope>
+</KeyValueMapOperations>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="false" name="AM-Error503.1">
+    <DisplayName>AM-Error503.1</DisplayName>
+    <Set>
+        <Headers>
+            <Header name="messageid">{messageid}</Header>
+        </Headers>
+        <Payload contentType="application/json">{"errores":[{"codigo": "503.1","mensaje": "Servicio no disponible."}]}</Payload>
+        <StatusCode>503</StatusCode>
+        <ReasonPhrase>SERVICE UNAVAILABLE</ReasonPhrase>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="response"/>
+</AssignMessage>

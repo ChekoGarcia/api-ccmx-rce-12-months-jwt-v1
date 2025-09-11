@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-Error429.1">
+    <DisplayName>AM-Error429.1</DisplayName>
+    <Set>
+        <Headers>
+            <Header name="messageid">{messageid}</Header>
+        </Headers>
+        <Payload contentType="application/json">{"errores":[{"codigo": "429.1","mensaje": "Has sobrepasado los límites de consumo."}]}
+        </Payload>
+        <StatusCode>429</StatusCode>
+        <ReasonPhrase>Too Many Requests</ReasonPhrase>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="response"/>
+</AssignMessage>

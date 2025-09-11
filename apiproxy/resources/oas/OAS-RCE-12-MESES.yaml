@@ -1,0 +1,425 @@
+openapi: 3.0.1
+info:
+  title: RCE 12 MESES
+  description: Gestion y envio del RCE para clientes que tienen gratuidad cada 12
+    meses.
+  termsOfService: urn:tos
+  contact: {}
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0
+  version: "1.0"
+servers:
+- url: //services.circulodecredito.com.mx/v1/rce-12-meses
+tags:
+- name: Settings
+  description: Gestion de registros.
+security:
+  - x-api-key: []
+    x-signature: []
+    username: []
+    password: []
+    Authorization: []
+    x-session: []
+paths:
+  /get-value:
+    post:
+      tags:
+      - Settings
+      summary: Obtiene el estado actual del registro.
+      parameters:
+      - name: x-signature
+        in: header
+        description: Firma generada con la llave privada
+        required: true
+        schema:
+          type: string
+      - name: x-api-key
+        in: header
+        description: ConsumerKey obtenido desde el portal de desarrolladores
+        required: true
+        schema:
+          type: string
+      - name: username
+        in: header
+        description: Usuario de Círculo de Crédito
+        required: true
+        schema:
+          type: string
+      - name: password
+        in: header
+        description: Contraseña de Círculo de Crédito
+        required: true
+        schema:
+          type: string
+      - name: Authorization
+        in: header
+        description: JWT de autorizacion de sesion
+        required: true
+        schema:
+          type: string
+      - name: x-session
+        in: header
+        description: Encode Base64 de email y idcdc del usuario
+        required: true
+        schema:
+          type: string
+      requestBody:
+        description: Request para dar de alta IDCDC
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RequestGetValue'
+        required: true
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Response'
+        "400":
+          description: BAD REQUEST
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errores'
+              example:
+                errores:
+                - codigo: "400.1"
+                  mensaje: "El campo \"{Campo}\" no puede estar vacío."
+        "404":
+          description: NOT FOUND
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errores'
+              example:
+                errores:
+                - codigo: "404.1"
+                  mensaje: No se encontraron resultados.
+        "401":
+          description: UNAUTHORIZED
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errores'
+              example:
+                errores:
+                - codigo: "401.1"
+                  mensaje: "Acceso no autorizado, x-api-key no válida."
+                - codigo: "401.2"
+                  mensaje: Acceso no autorizado.
+                - codigo: "401.3"
+                  mensaje: "Acceso no autorizado, no tiene el producto asociado."
+                - codigo: "401.4"
+                  mensaje: "Acceso no autorizado, no tiene acceso al recurso."
+        "403":
+          description: FORBIDDEN
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errores'
+              example:
+                errores:
+                - codigo: "403.1"
+                  mensaje: "No se pudo autenticar, x-signature no es válida"
+        "429":
+          description: TOO MANY REQUESTS
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errores'
+              example:
+                errores:
+                - codigo: "429.1"
+                  mensaje: Se han enviado demasiadas solicitudes. Se debe esperar
+                    antes de realizar una nueva solicitud.
+        "500":
+          description: INTERNAL SERVER ERROR
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errores'
+              example:
+                errores:
+                - codigo: "500.1"
+                  mensaje: "Ocurrió un problema, inténtelo nuevamente más tarde."
+        "503":
+          description: SERVICE UNAVAILABLE
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errores'
+              example:
+                errores:
+                - codigo: "503.1"
+                  mensaje: Servicio no disponible.
+      x-codegen-request-body-name: request
+  /upsert:
+    post:
+      tags:
+      - Settings
+      summary: Alta o actualización de registros en la BD.
+      parameters:
+      - name: x-signature
+        in: header
+        description: Firma generada con la llave privada
+        required: true
+        schema:
+          type: string
+      - name: x-api-key
+        in: header
+        description: ConsumerKey obtenido desde el portal de desarrolladores
+        required: true
+        schema:
+          type: string
+      - name: username
+        in: header
+        description: Usuario de Círculo de Crédito
+        required: true
+        schema:
+          type: string
+      - name: password
+        in: header
+        description: Contraseña de Círculo de Crédito
+        required: true
+        schema:
+          type: string
+      - name: Authorization
+        in: header
+        description: JWT de autorizacion de sesion
+        required: true
+        schema:
+          type: string
+      - name: x-session
+        in: header
+        description: Encode Base64 de email y idcdc del usuario
+        required: true
+        schema:
+          type: string
+      requestBody:
+        description: Request para dar de alta IDCDC
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RequestUpsert'
+        required: true
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Response'
+        "400":
+          description: BAD REQUEST
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errores'
+              example:
+                errores:
+                - codigo: "400.1"
+                  mensaje: "El campo \"{Campo}\" no puede estar vacío."
+        "404":
+          description: NOT FOUND
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errores'
+              example:
+                errores:
+                - codigo: "404.1"
+                  mensaje: No se encontraron resultados.
+        "401":
+          description: UNAUTHORIZED
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errores'
+              example:
+                errores:
+                - codigo: "401.1"
+                  mensaje: "Acceso no autorizado, x-api-key no válida."
+                - codigo: "401.2"
+                  mensaje: Acceso no autorizado.
+                - codigo: "401.3"
+                  mensaje: "Acceso no autorizado, no tiene el producto asociado."
+                - codigo: "401.4"
+                  mensaje: "Acceso no autorizado, no tiene acceso al recurso."
+        "403":
+          description: FORBIDDEN
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errores'
+              example:
+                errores:
+                - codigo: "403.1"
+                  mensaje: "No se pudo autenticar, x-signature no es válida"
+        "429":
+          description: TOO MANY REQUESTS
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errores'
+              example:
+                errores:
+                - codigo: "429.1"
+                  mensaje: Se han enviado demasiadas solicitudes. Se debe esperar
+                    antes de realizar una nueva solicitud.
+        "500":
+          description: INTERNAL SERVER ERROR
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errores'
+              example:
+                errores:
+                - codigo: "500.1"
+                  mensaje: "Ocurrió un problema, inténtelo nuevamente más tarde."
+        "503":
+          description: SERVICE UNAVAILABLE
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errores'
+              example:
+                errores:
+                - codigo: "503.1"
+                  mensaje: Servicio no disponible.
+      x-codegen-request-body-name: request
+components:
+  securitySchemes:
+    x-api-key:
+      type: apiKey
+      name: x-api-key
+      in: header
+    x-signature:
+      type: apiKey
+      name: x-signature
+      in: header
+    username:
+      type: apiKey
+      name: username
+      in: header
+    password:
+      type: apiKey
+      name: password
+      in: header
+    Authorization:
+      type: apiKey
+      name: Authorization
+      in: header
+    x-session:
+      type: apiKey
+      name: x-session
+      in: header
+  schemas:
+    RequestGetValue:
+      required:
+      - idCDC
+      - metaKey
+      type: object
+      properties:
+        metaKey:
+          maxLength: 50
+          minLength: 3
+          pattern: "^[a-zA-Z0-9_-]+$"
+          type: string
+          description: Producto al que hace referencia la consulta.
+          format: metaKey-format
+        idCDC:
+          maxLength: 24
+          minLength: 24
+          pattern: "^[A-Za-z0-9-]+$"
+          type: string
+          description: idCDC
+          format: id_cdc-format
+      example:
+        metaKey: rce_12_meses
+        idCDC: CC01-10-1010101010101010
+    RequestUpsert:
+      required:
+      - idCDC
+      - metaKey
+      - newValue
+      type: object
+      properties:
+        metaKey:
+          maxLength: 50
+          minLength: 3
+          pattern: "^[a-zA-Z0-9_-]+$"
+          type: string
+          description: Producto al que hace referencia la consulta.
+          format: metaKey-format
+        idCDC:
+          maxLength: 24
+          minLength: 24
+          pattern: "^[A-Za-z0-9-]+$"
+          type: string
+          description: idCDC
+          format: id_cdc-format
+        newValue:
+          maxLength: 1
+          minLength: 1
+          pattern: "^[01]$"
+          type: string
+          description: 1 Activo - 0 Inactivo
+          format: newValue-format
+      example:
+        metaKey: rce_12_meses
+        idCDC: CC01-10-1010101010101010
+        newValue: 1
+    Response:
+      type: object
+      properties:
+        httpStatus:
+          type: integer
+          format: int32
+          example: 200
+        success:
+          type: boolean
+          example: true
+        message:
+          type: string
+          example: Success
+        errors:
+          type: string
+          example: "null"
+        data:
+          $ref: '#/components/schemas/Data'
+    Data:
+      type: object
+      properties:
+        metaValue:
+          type: string
+          example: "400"
+        createdAt:
+          type: string
+          example: Descripcion del error
+        updatedAt:
+          type: string
+          example: Descripcion del error
+      example:
+        metaValue: 1
+        createdAt: 03/01/21
+        updatedAt: 03/01/24
+    Error:
+      type: object
+      properties:
+        codigo:
+          type: string
+          example: "400"
+        mensaje:
+          type: string
+          example: Descripcion del error
+    Errores:
+      type: object
+      properties:
+        errores:
+          type: array
+          items:
+            $ref: '#/components/schemas/Error'
+x-original-swagger-version: "2.0"

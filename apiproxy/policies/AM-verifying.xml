@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-verifying">
+    <DisplayName>AM-verifying</DisplayName>
+    <Properties/>
+    <AssignVariable>
+        <Name>x.scope.verifying</Name>
+        <Ref>private.x.scope.rccpm</Ref>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-Error500.1">
+    <DisplayName>AM-Error500.1</DisplayName>
+    <Set>
+        <Headers>
+            <Header name="messageid">{messageid}</Header>
+        </Headers>
+        <Payload contentType="application/json">{"errores":[{"codigo": "500.1", "mensaje": "Ocurrió un problema, inténtelo nuevamente más tarde."}]}</Payload>
+        <StatusCode>500</StatusCode>
+        <ReasonPhrase>Internal Server Error</ReasonPhrase>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="response"/>
+</AssignMessage>

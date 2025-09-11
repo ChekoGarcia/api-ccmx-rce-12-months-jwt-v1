@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-AddCORS">
+    <DisplayName>AM-AddCORS</DisplayName>
+    <Remove>
+        <Headers>
+            <Header name="Access-Control-Allow-Origin"/>
+            <Header name="Access-Control-Allow-Headers"/>
+            <Header name="Access-Control-Max-Age"/>
+            <Header name="Access-Control-Allow-Methods"/>
+            <Header name="Access-Control-Allow-Credentials"/>
+        </Headers>
+    </Remove>
+    <Add>
+        <Headers>
+            <Header name="Content-Type">application/json</Header>
+            <Header name="Access-Control-Allow-Origin">*</Header>
+            <Header name="Access-Control-Allow-Headers">content-type, x-api-key, x-signature, username, password</Header>
+            <Header name="Access-Control-Max-Age">3628800</Header>
+            <Header name="Access-Control-Allow-Methods">GET, PUT, POST, DELETE</Header>
+            <Header name="Access-Control-Allow-Credentials">false</Header>
+        </Headers>
+    </Add>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="response"/>
+</AssignMessage>

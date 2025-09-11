@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-request-post-ine-verificacion">
+    <DisplayName>AM-request-post-ine-verificacion</DisplayName>
+    <Properties/>
+    <Set>
+        <Verb>POST</Verb>
+        <Headers>
+            <Header name="Authorization">{keycloak.access_token}</Header>
+            <Header name="Otorgante">{bitacora.claveOtorganteXML}</Header>
+            <Header name="Usuario">{bitacora.claveUsuario}</Header>
+        </Headers>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-Error401.2">
+    <DisplayName>AM-Error401.2</DisplayName>
+    <Set>
+        <Headers>
+            <Header name="messageid">{messageid}</Header>
+        </Headers>
+        <Payload contentType="application/json">{"errores":[{"codigo": "401.2", "mensaje": "Acceso no autorizado."}]}
+        </Payload>
+        <StatusCode>401</StatusCode>
+        <ReasonPhrase>Unauthorized</ReasonPhrase>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="response"/>
+</AssignMessage>

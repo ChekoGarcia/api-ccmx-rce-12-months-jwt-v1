@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="RF-ApigeeErr-405">
+    <DisplayName>RF-ApigeeErr-405</DisplayName>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <Headers/>
+            <Payload contentType="application/json">{"errores":[{"codigo":"405.1","mensaje":"Método no permitido."}]}</Payload>
+            <StatusCode>405</StatusCode>
+            <ReasonPhrase>Method Not Allowed</ReasonPhrase>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-Error404.1">
+    <DisplayName>AM-Error404.1</DisplayName>
+    <Set>
+        <Headers>
+            <Header name="messageid">{messageid}</Header>
+        </Headers>
+        <Payload contentType="application/json">
+            {
+                "errores": [
+                    {
+                        "codigo": "404.1",
+                        "mensaje": "No se encontró a la persona."
+                    }
+                ]
+            }        
+        </Payload>
+        <StatusCode>404</StatusCode>
+        <ReasonPhrase>Not found</ReasonPhrase>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="response"/>
+</AssignMessage>
