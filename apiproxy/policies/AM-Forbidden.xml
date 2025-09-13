@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <AssignMessage async="false" continueOnError="false" enabled="true" name="AM-Forbidden">
-    <DisplayName>AM-Forbidden</DisplayName>
-    <Set>
-        <Headers>
-            <Header name="messageid">{messageid}</Header>
-        </Headers>
-        <Payload contentType="application/json">
+  <DisplayName>AM-Forbidden</DisplayName>
+  <Set>
+    <Headers>
+      <Header name="messageid">{messageid}</Header>
+    </Headers>
+    <Payload contentType="application/json">
            {
     "errors": [{
                 "code": "403",
@@ -13,9 +13,8 @@
             }]
             }
         </Payload>
-        <StatusCode>403</StatusCode>
-        <ReasonPhrase>Forbidden</ReasonPhrase>
-    </Set>
-    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
-    <AssignTo createNew="false" transport="http" type="response"/>
+    <StatusCode>403</StatusCode>
+    <ReasonPhrase>Forbidden</ReasonPhrase>
+  </Set>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
 </AssignMessage>

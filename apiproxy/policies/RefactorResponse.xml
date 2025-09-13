@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Javascript async="false" continueOnError="false" enabled="false" timeLimit="200" name="RefactorResponse">
-    <DisplayName>RefactorResponse</DisplayName>
-    <Properties/>
-    <ResourceURL>jsc://RefactorResponse.js</ResourceURL>
-</Javascript>

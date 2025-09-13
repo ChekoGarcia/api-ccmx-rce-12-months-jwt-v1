@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <AssignMessage async="false" continueOnError="false" enabled="true" name="AM-Error404.1">
-    <DisplayName>AM-Error404.1</DisplayName>
-    <Set>
-        <Headers>
-            <Header name="messageid">{messageid}</Header>
-        </Headers>
-        <Payload contentType="application/json">
+  <DisplayName>AM-Error404.1</DisplayName>
+  <Set>
+    <Headers>
+      <Header name="messageid">{messageid}</Header>
+    </Headers>
+    <Payload contentType="application/json">
             {
                 "errores": [
                     {
@@ -15,9 +15,8 @@
                 ]
             }        
         </Payload>
-        <StatusCode>404</StatusCode>
-        <ReasonPhrase>Not found</ReasonPhrase>
-    </Set>
-    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
-    <AssignTo createNew="false" transport="http" type="response"/>
+    <StatusCode>404</StatusCode>
+    <ReasonPhrase>Not found</ReasonPhrase>
+  </Set>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
 </AssignMessage>

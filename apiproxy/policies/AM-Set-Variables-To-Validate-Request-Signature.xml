@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-Set-Variables-To-Validate-Request-Signature">
+  <DisplayName>AM-Set-Variables-To-Validate-Request-Signature</DisplayName>
+  <Properties />
+  <AssignVariable>
+    <Name>x.scope.verifying</Name>
+    <Ref>private.x.scope.rccpm</Ref>
+  </AssignVariable>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</AssignMessage>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="KVM-Get-Quota-And-Billing-Data" mapIdentifier="KVM-RCE-12-MESES">
+  <DisplayName>KVM-Get-Quota-And-Billing-Data</DisplayName>
+  <Get assignTo="private.cuotas.peticionesMensuales">
+    <Key>
+      <Parameter>monthly_requests</Parameter>
+    </Key>
+  </Get>
+  <Get assignTo="private.cuotas.peticionesMinuto">
+    <Key>
+      <Parameter>requests_per_minute</Parameter>
+    </Key>
+  </Get>
+  <Get assignTo="private.cuotas.peticionesSegundo">
+    <Key>
+      <Parameter>requests_per_second</Parameter>
+    </Key>
+  </Get>
+  <Get assignTo="private.bf.indicadorFirma">
+    <Key>
+      <Parameter>billing_journal.signature_indicator</Parameter>
+    </Key>
+  </Get>
+  <Get assignTo="private.bf.sNombreServer">
+    <Key>
+      <Parameter>billing_journalx.server_name</Parameter>
+    </Key>
+  </Get>
+  <Get assignTo="private.product_name">
+    <Key>
+      <Parameter>product_name</Parameter>
+    </Key>
+  </Get>
+  <Get assignTo="private.context.sf">
+    <Key>
+      <Parameter>context</Parameter>
+    </Key>
+  </Get>
+  <Scope>environment</Scope>
+</KeyValueMapOperations>

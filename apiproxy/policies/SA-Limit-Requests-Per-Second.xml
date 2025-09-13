@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SpikeArrest async="false" continueOnError="false" enabled="true" name="SA-Limit-Requests-Per-Second">
+  <DisplayName>SA-Limit-Requests-Per-Second</DisplayName>
+  <Rate ref="private.cuotas.peticionesSegundo" />
+  <UseEffectiveCount>true</UseEffectiveCount>
+</SpikeArrest>

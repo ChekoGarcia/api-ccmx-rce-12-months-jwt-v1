@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="EV-Response-Timing-Metric">
+  <DisplayName>EV-Response-Timing-Metric</DisplayName>
+  <Properties />
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <Header name="X-time-rcc-elapsed">
+    <Pattern ignoreCase="false">{total_time_target}</Pattern>
+  </Header>
+  <Header name="X-time-signaturing-elapsed">
+    <Pattern ignoreCase="false">{total_time_signaturing}</Pattern>
+  </Header>
+  <Source clearPayload="false">response</Source>
+  <VariablePrefix>apigee</VariablePrefix>
+</ExtractVariables>

@@ -5,12 +5,12 @@
     <PreFlow name="PreFlow">
         <Request>
             <Step>
-                <Name>AM-DELETE-PATHSUFGFIX</Name>
+                <Name>AM-Remove-Path-Suffix</Name>
             </Step>
         </Request>
         <Response>
             <Step>
-                <Name>AM-AddCORS</Name>
+                <Name>AM-Add-CORS</Name>
             </Step>
         </Response>
     </PreFlow>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-Remove-Path-Suffix">
+  <DisplayName>AM-Remove-Path-Suffix</DisplayName>
+  <AssignVariable>
+    <Name>target.copy.pathsuffix</Name>
+    <Value>false</Value>
+  </AssignVariable>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</AssignMessage>

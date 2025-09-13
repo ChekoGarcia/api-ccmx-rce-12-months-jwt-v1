@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Javascript async="false" continueOnError="false" enabled="false" timeLimit="200" name="Null-response-params">
-    <DisplayName>Null-response-params</DisplayName>
-    <Properties/>
-    <ResourceURL>jsc://Null-response-params.js</ResourceURL>
-</Javascript>

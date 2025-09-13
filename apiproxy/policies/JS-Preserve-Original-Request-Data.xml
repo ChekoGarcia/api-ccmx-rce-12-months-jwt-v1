@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Javascript async="false" continueOnError="false" enabled="true" timeLimit="200" name="JS-Preserve-Original-Request-Data">
+  <DisplayName>JS-Preserve-Original-Request-Data</DisplayName>
+  <Properties />
+  <ResourceURL>jsc://js_preserve_original_request_data.js</ResourceURL>
+</Javascript>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OASValidation continueOnError="true" enabled="true" name="OAS-Validate-Quota-Contract">
+  <DisplayName>OAS-Validate-Quota-Contract</DisplayName>
+  <Properties />
+  <Source>request</Source>
+  <OASResource>oas://OAS-RCE-12-MESES.yaml</OASResource>
+  <Options>
+    <ValidateMessageBody>true</ValidateMessageBody>
+  </Options>
+</OASValidation>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<StatisticsCollector async="false" continueOnError="false" enabled="true" name="Stats-Collect-Timing-Metrics">
+  <DisplayName>Stats-Collect-Timing-Metrics</DisplayName>
+  <Properties />
+  <Statistics>
+    <Statistic name="total_time_target" ref="apigee.total_time_target" type="integer">0</Statistic>
+    <Statistic name="total_time_signaturing" ref="apigee.total_time_signaturing" type="integer">0</Statistic>
+    <Statistic name="total_time_signaturing_sing" ref="apigee.total_time_signaturing" type="integer">0</Statistic>
+    <Statistic name="total_time_verify" ref="apigee.total_time_signaturing" type="integer">0</Statistic>
+    <Statistic name="total_time_keycloak" ref="apigee.total_time_signaturing" type="integer">0</Statistic>
+  </Statistics>
+</StatisticsCollector>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Javascript async="false" continueOnError="false" enabled="false" timeLimit="200" name="emitElapsed">
-    <DisplayName>emitElapsed</DisplayName>
-    <Properties/>
-    <ResourceURL>jsc://emitElapsed.js</ResourceURL>
-</Javascript>

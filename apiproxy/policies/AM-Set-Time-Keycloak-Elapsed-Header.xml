@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-Set-Time-Keycloak-Elapsed-Header">
+  <DisplayName>AM-Set-Time-Keycloak-Elapsed-Header</DisplayName>
+  <Properties />
+  <Set>
+    <Headers>
+      <Header name="X-time-keycloak-elapsed">{elapsed}</Header>
+    </Headers>
+  </Set>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</AssignMessage>

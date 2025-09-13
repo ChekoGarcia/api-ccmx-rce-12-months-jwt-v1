@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FlowCallout async="false" continueOnError="false" enabled="true" name="FC-Sign-Response">
+  <DisplayName>FC-Sign-Response</DisplayName>
+  <FaultRules />
+  <Properties />
+  <SharedFlowBundle>Signaturing</SharedFlowBundle>
+</FlowCallout>

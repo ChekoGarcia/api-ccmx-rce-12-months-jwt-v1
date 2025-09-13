@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Javascript async="false" continueOnError="false" enabled="true" timeLimit="200" name="JS-Remove-Accents">
+  <DisplayName>JS-Remove-Accents</DisplayName>
+  <Properties />
+  <ResourceURL>jsc://js_remove_accents.js</ResourceURL>
+</Javascript>

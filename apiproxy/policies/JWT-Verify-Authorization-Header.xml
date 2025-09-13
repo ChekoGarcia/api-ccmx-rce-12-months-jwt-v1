@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<VerifyJWT async="false" continueOnError="false" enabled="true" name="JWT-Verify-Authorization-Header">
+  <DisplayName>JWT-Verify-Authorization-Header</DisplayName>
+  <Algorithm>HS256</Algorithm>
+  <Source>request.header.Authorization</Source>
+  <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+  <SecretKey>
+    <Value ref="private.jwt_secret_key" />
+  </SecretKey>
+  <AdditionalClaims />
+</VerifyJWT>

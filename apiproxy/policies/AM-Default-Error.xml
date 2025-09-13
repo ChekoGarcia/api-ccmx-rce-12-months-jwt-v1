@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-Default-Error">
+  <DisplayName>AM-Default-Error</DisplayName>
+  <Set>
+    <Headers>
+      <Header name="messageid">{messageid}</Header>
+    </Headers>
+    <Payload contentType="application/json">{"errores":[{"codigo": "{fault.name}", "mensaje": "OcurriÃ³ un problema, intÃ©ntelo nuevamente mÃ¡s tarde."}]}</Payload>
+  </Set>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</AssignMessage>

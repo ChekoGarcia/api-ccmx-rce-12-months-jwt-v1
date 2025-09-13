@@ -1,0 +1,355 @@
+[2025-09-13 14:33:12] [INFO] === INICIANDO REFACTORIZACION DE PROXY ===
+[2025-09-13 14:33:12] [INFO] Ruta del proxy: .
+[2025-09-13 14:33:12] [INFO] Modo DryRun: False
+[2025-09-13 14:33:12] [INFO] Archivo de mapeo personalizado: policy-mapping.csv
+[2025-09-13 14:33:12] [INFO] Mapeos de homologación disponibles: 49
+[2025-09-13 14:33:12] [WARNING] Archivo de mapeo personalizado no encontrado: policy-mapping.csv
+[2025-09-13 14:33:12] [INFO] Se usará solo el mapeo estándar basado en prefijos
+[2025-09-13 14:33:16] [INFO] Backup creado en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\backup-20250913-143312
+[2025-09-13 14:33:16] [INFO] Fase 1: Corrigiendo archivos JavaScript mal formateados...
+[2025-09-13 14:33:16] [INFO] Fase 2: Procesando politicas...
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: AccessControlDeveloperProducts -> FC-Validate-API-Access
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: ACL -> FC-Validate-Origin-IP
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: AM-AddCORS -> AM-Add-CORS
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: AM-DefaultError -> AM-Default-Error
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: AM-DELETE-PATHSUFGFIX -> AM-Remove-Path-Suffix
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: AM-elapse-kc -> AM-Set-Time-Keycloak-Elapsed-Header
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: AM-signature -> AM-Set-Variables-To-Sign-Response
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: AM-Singnature-response -> AM-Set-Response-Signature-Header
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: AM-verifying -> AM-Set-Variables-To-Validate-Request-Signature
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: BIC -> FC-BIC
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: Decode-JWT-1 -> JWT-Decode-Authorization-Header
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: Developer-Quotas -> FC-Validate-Consumption
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: EVS-stadistic-request -> EV-Request-Timing-Metrics
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: EVS-stadistic-response -> EV-Response-Timing-Metric
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: FC-HeadersMtls -> FC-Set-Backend-Authorization-Headers
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: Get-Developer-Data -> JS-Get-Developer-Data
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: JS-ExtractOtorgante -> JS-Extract-Grantor
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: JS-FormatError -> JS-Format-OAS-Validation-Error
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: JS-Get-Data -> JS-Preserve-Original-Request-Data
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: JS-REP-Error -> JS-Handle-Error-Response
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: JS-ValidateRequest -> JS-Validate-Request
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: JS-ValidNewHeader -> JS-Valid-New-Header
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: JS-Variables-Bitacora -> JS-Set-Data-For-Billing-Record
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: JSON-Threat-Protection -> JTP-JSON-Threat-Protection
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: JSON-validation -> MV-Validate-Json-Wellformed
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: keycloak-cache -> FC-Process-OAuth-Token
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: KVM-Keycloak -> KVM-Get-Keycloak-Settings
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: KVM-RCE-12-MESES -> KVM-Get-Quota-And-Billing-Data
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: Null-request-param -> JS-Set-Request-Param-To-Null
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: OAS-RCE-12-MESES-Validation -> OAS-Validate-Quota-Contract
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: OPTIONS-CORS-Headers-Response -> RF-Stop-Options-Pre-Flight-Requests
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: RemoveAcents -> JS-Remove-Accents
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: RemoveHeaders -> FC-Remove-Headers
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: REP-HEADERS -> RE-Protect-From-Injections
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: SA-PeticionesSegundo -> SA-Limit-Requests-Per-Second
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: Signaturing -> FC-Sign-Response
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: Statistics-Collector -> Stats-Collect-Timing-Metrics
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: Verify-JWT-1 -> JWT-Verify-Authorization-Header
+[2025-09-13 14:33:16] [INFO] Usando mapeo de homologación: Verifying-signature -> FC-Verify-Signature
+[2025-09-13 14:33:16] [INFO] Fase 2.5: Eliminando políticas deshabilitadas...
+[2025-09-13 14:33:16] [INFO] Política deshabilitada eliminada: AM-Error400.1
+[2025-09-13 14:33:16] [INFO] Política deshabilitada eliminada: AM-Error503.1
+[2025-09-13 14:33:16] [INFO] Política deshabilitada eliminada: ContentType
+[2025-09-13 14:33:16] [INFO] Política deshabilitada eliminada: emitElapsed
+[2025-09-13 14:33:16] [INFO] Política deshabilitada eliminada: HeadersMtls
+[2025-09-13 14:33:16] [INFO] Política deshabilitada eliminada: Null-response-params
+[2025-09-13 14:33:16] [INFO] Política deshabilitada eliminada: RefactorResponse
+[2025-09-13 14:33:16] [INFO] Fase 3: Renombrando politicas...
+[2025-09-13 14:33:16] [INFO] Atributo 'name' actualizado: AccessControlDeveloperProducts -> FC-Validate-API-Access en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AccessControlDeveloperProducts.xml
+[2025-09-13 14:33:16] [INFO] DisplayName actualizado: AccessControlDeveloperProducts -> FC-Validate-API-Access en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AccessControlDeveloperProducts.xml
+[2025-09-13 14:33:16] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AccessControlDeveloperProducts.xml
+[2025-09-13 14:33:16] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AccessControlDeveloperProducts.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\FC-Validate-API-Access.xml
+[2025-09-13 14:33:16] [INFO] Politica renombrada: AccessControlDeveloperProducts -> FC-Validate-API-Access
+[2025-09-13 14:33:16] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (AccessControlDeveloperProducts -> FC-Validate-API-Access)
+[2025-09-13 14:33:16] [INFO] Atributo 'name' actualizado: ACL -> FC-Validate-Origin-IP en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\ACL.xml
+[2025-09-13 14:33:16] [INFO] DisplayName actualizado: ACL -> FC-Validate-Origin-IP en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\ACL.xml
+[2025-09-13 14:33:16] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\ACL.xml
+[2025-09-13 14:33:16] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\ACL.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\FC-Validate-Origin-IP.xml
+[2025-09-13 14:33:16] [INFO] Politica renombrada: ACL -> FC-Validate-Origin-IP
+[2025-09-13 14:33:16] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (ACL -> FC-Validate-Origin-IP)
+[2025-09-13 14:33:16] [INFO] Atributo 'name' actualizado: AM-AddCORS -> AM-Add-CORS en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-AddCORS.xml
+[2025-09-13 14:33:16] [INFO] DisplayName actualizado: AM-AddCORS -> AM-Add-CORS en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-AddCORS.xml
+[2025-09-13 14:33:16] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-AddCORS.xml
+[2025-09-13 14:33:16] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-AddCORS.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-Add-CORS.xml
+[2025-09-13 14:33:16] [INFO] Politica renombrada: AM-AddCORS -> AM-Add-CORS
+[2025-09-13 14:33:16] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (AM-AddCORS -> AM-Add-CORS)
+[2025-09-13 14:33:16] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\targets\Get-value.xml (AM-AddCORS -> AM-Add-CORS)
+[2025-09-13 14:33:16] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\targets\Upsert.xml (AM-AddCORS -> AM-Add-CORS)
+[2025-09-13 14:33:16] [INFO] Atributo 'name' actualizado: AM-DefaultError -> AM-Default-Error en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-DefaultError.xml
+[2025-09-13 14:33:16] [INFO] DisplayName actualizado: AM-DefaultError -> AM-Default-Error en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-DefaultError.xml
+[2025-09-13 14:33:16] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-DefaultError.xml
+[2025-09-13 14:33:16] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-DefaultError.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-Default-Error.xml
+[2025-09-13 14:33:16] [INFO] Politica renombrada: AM-DefaultError -> AM-Default-Error
+[2025-09-13 14:33:16] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (AM-DefaultError -> AM-Default-Error)
+[2025-09-13 14:33:16] [INFO] Atributo 'name' actualizado: AM-DELETE-PATHSUFGFIX -> AM-Remove-Path-Suffix en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-DELETE-PATHSUFGFIX.xml
+[2025-09-13 14:33:16] [INFO] DisplayName actualizado: AM-DELETE-PATHSUFGFIX -> AM-Remove-Path-Suffix en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-DELETE-PATHSUFGFIX.xml
+[2025-09-13 14:33:16] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-DELETE-PATHSUFGFIX.xml
+[2025-09-13 14:33:16] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-DELETE-PATHSUFGFIX.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-Remove-Path-Suffix.xml
+[2025-09-13 14:33:16] [INFO] Politica renombrada: AM-DELETE-PATHSUFGFIX -> AM-Remove-Path-Suffix
+[2025-09-13 14:33:16] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\targets\Get-value.xml (AM-DELETE-PATHSUFGFIX -> AM-Remove-Path-Suffix)
+[2025-09-13 14:33:16] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\targets\Upsert.xml (AM-DELETE-PATHSUFGFIX -> AM-Remove-Path-Suffix)
+[2025-09-13 14:33:16] [INFO] Atributo 'name' actualizado: AM-elapse-kc -> AM-Set-Time-Keycloak-Elapsed-Header en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-elapse-kc.xml
+[2025-09-13 14:33:16] [INFO] DisplayName actualizado: AM-elapse-kc -> AM-Set-Time-Keycloak-Elapsed-Header en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-elapse-kc.xml
+[2025-09-13 14:33:16] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-elapse-kc.xml
+[2025-09-13 14:33:16] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-elapse-kc.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-Set-Time-Keycloak-Elapsed-Header.xml
+[2025-09-13 14:33:16] [INFO] Politica renombrada: AM-elapse-kc -> AM-Set-Time-Keycloak-Elapsed-Header
+[2025-09-13 14:33:16] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (AM-elapse-kc -> AM-Set-Time-Keycloak-Elapsed-Header)
+[2025-09-13 14:33:16] [INFO] Atributo 'name' actualizado: AM-signature -> AM-Set-Variables-To-Sign-Response en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-signature.xml
+[2025-09-13 14:33:16] [INFO] DisplayName actualizado: AM-signature -> AM-Set-Variables-To-Sign-Response en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-signature.xml
+[2025-09-13 14:33:16] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-signature.xml
+[2025-09-13 14:33:16] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-signature.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-Set-Variables-To-Sign-Response.xml
+[2025-09-13 14:33:16] [INFO] Politica renombrada: AM-signature -> AM-Set-Variables-To-Sign-Response
+[2025-09-13 14:33:16] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (AM-signature -> AM-Set-Variables-To-Sign-Response)
+[2025-09-13 14:33:16] [INFO] Atributo 'name' actualizado: AM-Singnature-response -> AM-Set-Response-Signature-Header en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-Singnature-response.xml
+[2025-09-13 14:33:16] [INFO] DisplayName actualizado: AM-Singnature-response -> AM-Set-Response-Signature-Header en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-Singnature-response.xml
+[2025-09-13 14:33:16] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-Singnature-response.xml
+[2025-09-13 14:33:16] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-Singnature-response.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-Set-Response-Signature-Header.xml
+[2025-09-13 14:33:16] [INFO] Politica renombrada: AM-Singnature-response -> AM-Set-Response-Signature-Header
+[2025-09-13 14:33:16] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (AM-Singnature-response -> AM-Set-Response-Signature-Header)
+[2025-09-13 14:33:16] [INFO] Atributo 'name' actualizado: AM-verifying -> AM-Set-Variables-To-Validate-Request-Signature en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-verifying.xml
+[2025-09-13 14:33:16] [INFO] DisplayName actualizado: AM-verifying -> AM-Set-Variables-To-Validate-Request-Signature en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-verifying.xml
+[2025-09-13 14:33:16] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-verifying.xml
+[2025-09-13 14:33:16] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-verifying.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\AM-Set-Variables-To-Validate-Request-Signature.xml
+[2025-09-13 14:33:16] [INFO] Politica renombrada: AM-verifying -> AM-Set-Variables-To-Validate-Request-Signature
+[2025-09-13 14:33:16] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (AM-verifying -> AM-Set-Variables-To-Validate-Request-Signature)
+[2025-09-13 14:33:16] [INFO] Atributo 'name' actualizado: BIC -> FC-BIC en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\BIC.xml
+[2025-09-13 14:33:16] [INFO] DisplayName actualizado: BIC -> FC-BIC en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\BIC.xml
+[2025-09-13 14:33:16] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\BIC.xml
+[2025-09-13 14:33:16] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\BIC.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\FC-BIC.xml
+[2025-09-13 14:33:16] [INFO] Politica renombrada: BIC -> FC-BIC
+[2025-09-13 14:33:16] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (BIC -> FC-BIC)
+[2025-09-13 14:33:16] [INFO] Atributo 'name' actualizado: Decode-JWT-1 -> JWT-Decode-Authorization-Header en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Decode-JWT-1.xml
+[2025-09-13 14:33:16] [INFO] DisplayName actualizado: Decode JWT-1 -> JWT-Decode-Authorization-Header en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Decode-JWT-1.xml
+[2025-09-13 14:33:16] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Decode-JWT-1.xml
+[2025-09-13 14:33:16] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Decode-JWT-1.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JWT-Decode-Authorization-Header.xml
+[2025-09-13 14:33:16] [INFO] Politica renombrada: Decode-JWT-1 -> JWT-Decode-Authorization-Header
+[2025-09-13 14:33:16] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (Decode-JWT-1 -> JWT-Decode-Authorization-Header)
+[2025-09-13 14:33:16] [INFO] Atributo 'name' actualizado: Developer-Quotas -> FC-Validate-Consumption en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Developer-Quotas.xml
+[2025-09-13 14:33:16] [INFO] DisplayName actualizado: Developer-Quotas -> FC-Validate-Consumption en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Developer-Quotas.xml
+[2025-09-13 14:33:16] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Developer-Quotas.xml
+[2025-09-13 14:33:16] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Developer-Quotas.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\FC-Validate-Consumption.xml
+[2025-09-13 14:33:16] [INFO] Politica renombrada: Developer-Quotas -> FC-Validate-Consumption
+[2025-09-13 14:33:16] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (Developer-Quotas -> FC-Validate-Consumption)
+[2025-09-13 14:33:16] [INFO] Atributo 'name' actualizado: EVS-stadistic-request -> EV-Request-Timing-Metrics en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\EVS-stadistic-request.xml
+[2025-09-13 14:33:16] [INFO] DisplayName actualizado: EVS-stadistic-request -> EV-Request-Timing-Metrics en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\EVS-stadistic-request.xml
+[2025-09-13 14:33:16] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\EVS-stadistic-request.xml
+[2025-09-13 14:33:16] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\EVS-stadistic-request.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\EV-Request-Timing-Metrics.xml
+[2025-09-13 14:33:16] [INFO] Politica renombrada: EVS-stadistic-request -> EV-Request-Timing-Metrics
+[2025-09-13 14:33:16] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (EVS-stadistic-request -> EV-Request-Timing-Metrics)
+[2025-09-13 14:33:16] [INFO] Atributo 'name' actualizado: EVS-stadistic-response -> EV-Response-Timing-Metric en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\EVS-stadistic-response.xml
+[2025-09-13 14:33:16] [INFO] DisplayName actualizado: EVS-stadistic-response -> EV-Response-Timing-Metric en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\EVS-stadistic-response.xml
+[2025-09-13 14:33:16] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\EVS-stadistic-response.xml
+[2025-09-13 14:33:16] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\EVS-stadistic-response.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\EV-Response-Timing-Metric.xml
+[2025-09-13 14:33:16] [INFO] Politica renombrada: EVS-stadistic-response -> EV-Response-Timing-Metric
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (EVS-stadistic-response -> EV-Response-Timing-Metric)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: FC-HeadersMtls -> FC-Set-Backend-Authorization-Headers en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\FC-HeadersMtls.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: FC-HeadersMtls -> FC-Set-Backend-Authorization-Headers en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\FC-HeadersMtls.xml
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\FC-HeadersMtls.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\FC-HeadersMtls.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\FC-Set-Backend-Authorization-Headers.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: FC-HeadersMtls -> FC-Set-Backend-Authorization-Headers
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (FC-HeadersMtls -> FC-Set-Backend-Authorization-Headers)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: Get-Developer-Data -> JS-Get-Developer-Data en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Get-Developer-Data.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: Get-Developer-Data -> JS-Get-Developer-Data en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Get-Developer-Data.xml
+[2025-09-13 14:33:17] [INFO] ResourceURL actualizado: jsc://Get-Developer-Data.min.js -> jsc://js_get_developer_data.js en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Get-Developer-Data.xml
+[2025-09-13 14:33:17] [INFO] Archivo JavaScript renombrado: Get-Developer-Data.min.js -> js_get_developer_data.js
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Get-Developer-Data.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Get-Developer-Data.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-Get-Developer-Data.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: Get-Developer-Data -> JS-Get-Developer-Data
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (Get-Developer-Data -> JS-Get-Developer-Data)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: JS-ExtractOtorgante -> JS-Extract-Grantor en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-ExtractOtorgante.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: JS-ExtractOtorgante -> JS-Extract-Grantor en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-ExtractOtorgante.xml
+[2025-09-13 14:33:17] [INFO] ResourceURL actualizado: jsc://JS-ExtractOtorgante.js -> jsc://js_extract_grantor.js en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-ExtractOtorgante.xml
+[2025-09-13 14:33:17] [INFO] Archivo JavaScript renombrado: JS-ExtractOtorgante.js -> js_extract_grantor.js
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-ExtractOtorgante.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-ExtractOtorgante.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-Extract-Grantor.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: JS-ExtractOtorgante -> JS-Extract-Grantor
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (JS-ExtractOtorgante -> JS-Extract-Grantor)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: JS-FormatError -> JS-Format-OAS-Validation-Error en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-FormatError.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: JS-FormatError -> JS-Format-OAS-Validation-Error en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-FormatError.xml
+[2025-09-13 14:33:17] [INFO] ResourceURL actualizado: jsc://JS-FormatError.js -> jsc://js_format_oas_validation_error.js en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-FormatError.xml
+[2025-09-13 14:33:17] [INFO] Archivo JavaScript renombrado: JS-FormatError.js -> js_format_oas_validation_error.js
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-FormatError.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-FormatError.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-Format-OAS-Validation-Error.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: JS-FormatError -> JS-Format-OAS-Validation-Error
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (JS-FormatError -> JS-Format-OAS-Validation-Error)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: JS-Get-Data -> JS-Preserve-Original-Request-Data en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-Get-Data.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: JS-Get-Data -> JS-Preserve-Original-Request-Data en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-Get-Data.xml
+[2025-09-13 14:33:17] [INFO] ResourceURL actualizado: jsc://JS-Get-Data.js -> jsc://js_preserve_original_request_data.js en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-Get-Data.xml
+[2025-09-13 14:33:17] [INFO] Archivo JavaScript renombrado: JS-Get-Data.js -> js_preserve_original_request_data.js
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-Get-Data.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-Get-Data.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-Preserve-Original-Request-Data.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: JS-Get-Data -> JS-Preserve-Original-Request-Data
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (JS-Get-Data -> JS-Preserve-Original-Request-Data)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: JS-REP-Error -> JS-Handle-Error-Response en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-REP-Error.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: JS-REP-Error -> JS-Handle-Error-Response en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-REP-Error.xml
+[2025-09-13 14:33:17] [INFO] ResourceURL actualizado: jsc://JS-REP-Error.js -> jsc://js_handle_error_response.js en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-REP-Error.xml
+[2025-09-13 14:33:17] [INFO] Archivo JavaScript renombrado: JS-REP-Error.js -> js_handle_error_response.js
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-REP-Error.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-REP-Error.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-Handle-Error-Response.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: JS-REP-Error -> JS-Handle-Error-Response
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (JS-REP-Error -> JS-Handle-Error-Response)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: JS-ValidateRequest -> JS-Validate-Request en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-ValidateRequest.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: JS-ValidateRequest -> JS-Validate-Request en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-ValidateRequest.xml
+[2025-09-13 14:33:17] [INFO] ResourceURL actualizado: jsc://JS-ValidateRequest.js -> jsc://js_validate_request.js en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-ValidateRequest.xml
+[2025-09-13 14:33:17] [INFO] Archivo JavaScript renombrado: JS-ValidateRequest.js -> js_validate_request.js
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-ValidateRequest.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-ValidateRequest.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-Validate-Request.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: JS-ValidateRequest -> JS-Validate-Request
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (JS-ValidateRequest -> JS-Validate-Request)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: JS-ValidNewHeader -> JS-Valid-New-Header en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-ValidNewHeader.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: JS-ValidNewHeader -> JS-Valid-New-Header en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-ValidNewHeader.xml
+[2025-09-13 14:33:17] [INFO] ResourceURL actualizado: jsc://JS-ValidNewHeader.js -> jsc://js_valid_new_header.js en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-ValidNewHeader.xml
+[2025-09-13 14:33:17] [INFO] Archivo JavaScript renombrado: JS-ValidNewHeader.js -> js_valid_new_header.js
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-ValidNewHeader.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-ValidNewHeader.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-Valid-New-Header.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: JS-ValidNewHeader -> JS-Valid-New-Header
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (JS-ValidNewHeader -> JS-Valid-New-Header)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: JS-Variables-Bitacora -> JS-Set-Data-For-Billing-Record en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-Variables-Bitacora.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: JS-Variables-Bitacora -> JS-Set-Data-For-Billing-Record en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-Variables-Bitacora.xml
+[2025-09-13 14:33:17] [INFO] ResourceURL actualizado: jsc://JS-Variables-Bitacora.js -> jsc://js_set_data_for_billing_record.js en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-Variables-Bitacora.xml
+[2025-09-13 14:33:17] [INFO] Archivo JavaScript renombrado: JS-Variables-Bitacora.js -> js_set_data_for_billing_record.js
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-Variables-Bitacora.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-Variables-Bitacora.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-Set-Data-For-Billing-Record.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: JS-Variables-Bitacora -> JS-Set-Data-For-Billing-Record
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (JS-Variables-Bitacora -> JS-Set-Data-For-Billing-Record)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: JSON-Threat-Protection -> JTP-JSON-Threat-Protection en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JSON-Threat-Protection.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: JSON-Threat-Protection -> JTP-JSON-Threat-Protection en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JSON-Threat-Protection.xml
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JSON-Threat-Protection.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JSON-Threat-Protection.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JTP-JSON-Threat-Protection.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: JSON-Threat-Protection -> JTP-JSON-Threat-Protection
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (JSON-Threat-Protection -> JTP-JSON-Threat-Protection)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: JSON-validation -> MV-Validate-Json-Wellformed en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JSON-validation.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: JSON-validation -> MV-Validate-Json-Wellformed en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JSON-validation.xml
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JSON-validation.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JSON-validation.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\MV-Validate-Json-Wellformed.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: JSON-validation -> MV-Validate-Json-Wellformed
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (JSON-validation -> MV-Validate-Json-Wellformed)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: keycloak-cache -> FC-Process-OAuth-Token en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\keycloak-cache.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: keycloak-cache -> FC-Process-OAuth-Token en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\keycloak-cache.xml
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\keycloak-cache.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\keycloak-cache.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\FC-Process-OAuth-Token.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: keycloak-cache -> FC-Process-OAuth-Token
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (keycloak-cache -> FC-Process-OAuth-Token)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: KVM-Keycloak -> KVM-Get-Keycloak-Settings en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\KVM-Keycloak.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: KVM-Keycloak -> KVM-Get-Keycloak-Settings en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\KVM-Keycloak.xml
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\KVM-Keycloak.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\KVM-Keycloak.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\KVM-Get-Keycloak-Settings.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: KVM-Keycloak -> KVM-Get-Keycloak-Settings
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (KVM-Keycloak -> KVM-Get-Keycloak-Settings)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: KVM-RCE-12-MESES -> KVM-Get-Quota-And-Billing-Data en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\KVM-RCE-12-MESES.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: KVM-RCE-12-MESES -> KVM-Get-Quota-And-Billing-Data en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\KVM-RCE-12-MESES.xml
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\KVM-RCE-12-MESES.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\KVM-RCE-12-MESES.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\KVM-Get-Quota-And-Billing-Data.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: KVM-RCE-12-MESES -> KVM-Get-Quota-And-Billing-Data
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (KVM-RCE-12-MESES -> KVM-Get-Quota-And-Billing-Data)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: Null-request-param -> JS-Set-Request-Param-To-Null en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Null-request-param.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: Null-request-param -> JS-Set-Request-Param-To-Null en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Null-request-param.xml
+[2025-09-13 14:33:17] [INFO] ResourceURL actualizado: jsc://NULL-request-param.js -> jsc://js_set_request_param_to_null.js en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Null-request-param.xml
+[2025-09-13 14:33:17] [INFO] Archivo JavaScript renombrado: NULL-request-param.js -> js_set_request_param_to_null.js
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Null-request-param.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Null-request-param.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-Set-Request-Param-To-Null.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: Null-request-param -> JS-Set-Request-Param-To-Null
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (Null-request-param -> JS-Set-Request-Param-To-Null)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: OAS-RCE-12-MESES-Validation -> OAS-Validate-Quota-Contract en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\OAS-RCE-12-MESES-Validation.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: OAS-RCE-12-MESES-Validation -> OAS-Validate-Quota-Contract en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\OAS-RCE-12-MESES-Validation.xml
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\OAS-RCE-12-MESES-Validation.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\OAS-RCE-12-MESES-Validation.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\OAS-Validate-Quota-Contract.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: OAS-RCE-12-MESES-Validation -> OAS-Validate-Quota-Contract
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (OAS-RCE-12-MESES-Validation -> OAS-Validate-Quota-Contract)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: OPTIONS-CORS-Headers-Response -> RF-Stop-Options-Pre-Flight-Requests en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\OPTIONS-CORS-Headers-Response.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: OPTIONS-CORS-Headers-Response -> RF-Stop-Options-Pre-Flight-Requests en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\OPTIONS-CORS-Headers-Response.xml
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\OPTIONS-CORS-Headers-Response.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\OPTIONS-CORS-Headers-Response.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\RF-Stop-Options-Pre-Flight-Requests.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: OPTIONS-CORS-Headers-Response -> RF-Stop-Options-Pre-Flight-Requests
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (OPTIONS-CORS-Headers-Response -> RF-Stop-Options-Pre-Flight-Requests)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: RemoveAcents -> JS-Remove-Accents en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\RemoveAcents.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: RemoveAcents -> JS-Remove-Accents en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\RemoveAcents.xml
+[2025-09-13 14:33:17] [INFO] ResourceURL actualizado: jsc://RemoveAcents.js -> jsc://js_remove_accents.js en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\RemoveAcents.xml
+[2025-09-13 14:33:17] [INFO] Archivo JavaScript renombrado: RemoveAcents.js -> js_remove_accents.js
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\RemoveAcents.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\RemoveAcents.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JS-Remove-Accents.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: RemoveAcents -> JS-Remove-Accents
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (RemoveAcents -> JS-Remove-Accents)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: RemoveHeaders -> FC-Remove-Headers en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\RemoveHeaders.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: RemoveHeaders -> FC-Remove-Headers en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\RemoveHeaders.xml
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\RemoveHeaders.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\RemoveHeaders.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\FC-Remove-Headers.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: RemoveHeaders -> FC-Remove-Headers
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (RemoveHeaders -> FC-Remove-Headers)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: REP-HEADERS -> RE-Protect-From-Injections en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\REP-HEADERS.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: REP-HEADERS -> RE-Protect-From-Injections en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\REP-HEADERS.xml
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\REP-HEADERS.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\REP-HEADERS.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\RE-Protect-From-Injections.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: REP-HEADERS -> RE-Protect-From-Injections
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (REP-HEADERS -> RE-Protect-From-Injections)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: SA-PeticionesSegundo -> SA-Limit-Requests-Per-Second en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\SA-PeticionesSegundo.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: SA-PeticionesSegundo -> SA-Limit-Requests-Per-Second en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\SA-PeticionesSegundo.xml
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\SA-PeticionesSegundo.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\SA-PeticionesSegundo.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\SA-Limit-Requests-Per-Second.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: SA-PeticionesSegundo -> SA-Limit-Requests-Per-Second
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (SA-PeticionesSegundo -> SA-Limit-Requests-Per-Second)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: Signaturing -> FC-Sign-Response en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Signaturing.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: Signaturing -> FC-Sign-Response en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Signaturing.xml
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Signaturing.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Signaturing.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\FC-Sign-Response.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: Signaturing -> FC-Sign-Response
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (Signaturing -> FC-Sign-Response)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: Statistics-Collector -> Stats-Collect-Timing-Metrics en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Statistics-Collector.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: Statistics Collector -> Stats-Collect-Timing-Metrics en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Statistics-Collector.xml
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Statistics-Collector.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Statistics-Collector.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Stats-Collect-Timing-Metrics.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: Statistics-Collector -> Stats-Collect-Timing-Metrics
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (Statistics-Collector -> Stats-Collect-Timing-Metrics)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: Verify-JWT-1 -> JWT-Verify-Authorization-Header en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Verify-JWT-1.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: Verify JWT-1 -> JWT-Verify-Authorization-Header en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Verify-JWT-1.xml
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Verify-JWT-1.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Verify-JWT-1.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\JWT-Verify-Authorization-Header.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: Verify-JWT-1 -> JWT-Verify-Authorization-Header
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (Verify-JWT-1 -> JWT-Verify-Authorization-Header)
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: Verifying-signature -> FC-Verify-Signature en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Verifying-signature.xml
+[2025-09-13 14:33:17] [INFO] DisplayName actualizado: Verifying-signature -> FC-Verify-Signature en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Verifying-signature.xml
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Verifying-signature.xml
+[2025-09-13 14:33:17] [INFO] Archivo renombrado: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\Verifying-signature.xml -> C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\policies\FC-Verify-Signature.xml
+[2025-09-13 14:33:17] [INFO] Politica renombrada: Verifying-signature -> FC-Verify-Signature
+[2025-09-13 14:33:17] [INFO] Referencia actualizada en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml (Verifying-signature -> FC-Verify-Signature)
+[2025-09-13 14:33:17] [INFO] Fase 4: Estandarizando targets...
+[2025-09-13 14:33:17] [INFO] Estandarizando target endpoints...
+[2025-09-13 14:33:17] [INFO] Atributo 'name' actualizado: Get-value -> get_value en C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\targets\Get-value.xml
+[2025-09-13 14:33:17] [INFO] Campos internos actualizados en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\targets\Get-value.xml
+[2025-09-13 14:33:17] [INFO] Target renombrado: Get-value -> get_value
+[2025-09-13 14:33:17] [INFO] Actualizando referencias de target: Get-value -> get_value
+[2025-09-13 14:33:17] [INFO] Referencia de target actualizada en RouteRule: Get-value -> get_value en RCE-12-MESES.xml
+[2025-09-13 14:33:17] [INFO] Referencias actualizadas en: C:\Proyectos\Apigee\Proxy en proceso\api-ccmx-rce-12-months-jwt-v1\apiproxy\proxies\RCE-12-MESES.xml
+[2025-09-13 14:33:17] [INFO] Fase 5: Removiendo AssignTo innecesarios...
+[2025-09-13 14:33:17] [INFO] AssignTo innecesario removido de: AM-Add-CORS.xml
+[2025-09-13 14:33:17] [INFO] AssignTo innecesario removido de: AM-Add-Header.xml
+[2025-09-13 14:33:17] [INFO] AssignTo innecesario removido de: AM-Default-Error.xml
+[2025-09-13 14:33:17] [INFO] AssignTo innecesario removido de: AM-Error400.2.xml
+[2025-09-13 14:33:17] [INFO] AssignTo innecesario removido de: AM-Error400.4.xml
+[2025-09-13 14:33:17] [INFO] AssignTo innecesario removido de: AM-Error401.1.xml
+[2025-09-13 14:33:17] [INFO] AssignTo innecesario removido de: AM-Error401.2.xml
+[2025-09-13 14:33:17] [INFO] AssignTo innecesario removido de: AM-Error401.3.xml
+[2025-09-13 14:33:17] [INFO] AssignTo innecesario removido de: AM-Error403.1.xml
+[2025-09-13 14:33:17] [INFO] AssignTo innecesario removido de: AM-Error403.2.xml
+[2025-09-13 14:33:18] [INFO] AssignTo innecesario removido de: AM-Error404.1.xml
+[2025-09-13 14:33:18] [INFO] AssignTo innecesario removido de: AM-Error405.1.xml
+[2025-09-13 14:33:18] [INFO] AssignTo innecesario removido de: AM-Error429.1.xml
+[2025-09-13 14:33:18] [INFO] AssignTo innecesario removido de: AM-Error500.1.xml
+[2025-09-13 14:33:18] [INFO] AssignTo innecesario removido de: AM-Error500.2.xml
+[2025-09-13 14:33:18] [INFO] AssignTo innecesario removido de: AM-Error504.1.xml
+[2025-09-13 14:33:18] [INFO] AssignTo innecesario removido de: AM-Forbidden.xml
+[2025-09-13 14:33:18] [INFO] AssignTo innecesario removido de: AM-Remove-Path-Suffix.xml
+[2025-09-13 14:33:18] [INFO] AssignTo innecesario removido de: AM-request-post-ine-verificacion.xml
+[2025-09-13 14:33:18] [INFO] AssignTo innecesario removido de: AM-Response-Error-Generic.xml
+[2025-09-13 14:33:18] [INFO] AssignTo innecesario removido de: AM-Response.xml
+[2025-09-13 14:33:18] [INFO] AssignTo innecesario removido de: AM-Set-Response-Signature-Header.xml
+[2025-09-13 14:33:18] [INFO] AssignTo innecesario removido de: AM-Set-Time-Keycloak-Elapsed-Header.xml
+[2025-09-13 14:33:18] [INFO] AssignTo innecesario removido de: AM-Set-Variables-To-Sign-Response.xml
+[2025-09-13 14:33:18] [INFO] AssignTo innecesario removido de: AM-Set-Variables-To-Validate-Request-Signature.xml
+[2025-09-13 14:33:18] [INFO] === REFACTORIZACION COMPLETADA ===
+[2025-09-13 14:33:18] [INFO] Estadísticas de refactorización:
+[2025-09-13 14:33:18] [INFO] - Políticas eliminadas: 7
+[2025-09-13 14:33:18] [INFO] - Políticas renombradas: 39
+[2025-09-13 14:33:18] [INFO] - Mapeos de homologación usados: 39 de 49 disponibles
+[2025-09-13 14:33:18] [INFO] - Mapeos personalizados usados: 0

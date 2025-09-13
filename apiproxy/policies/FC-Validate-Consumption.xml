@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FlowCallout async="false" continueOnError="false" enabled="true" name="FC-Validate-Consumption">
+  <DisplayName>FC-Validate-Consumption</DisplayName>
+  <FaultRules />
+  <Properties />
+  <SharedFlowBundle>Developer-Quotas</SharedFlowBundle>
+</FlowCallout>

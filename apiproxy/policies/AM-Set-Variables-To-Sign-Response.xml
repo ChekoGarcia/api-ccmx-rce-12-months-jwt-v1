@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-Set-Variables-To-Sign-Response">
+  <DisplayName>AM-Set-Variables-To-Sign-Response</DisplayName>
+  <Properties />
+  <AssignVariable>
+    <Name>x.scope.signaturing</Name>
+    <Ref>private.x.scope.vantage</Ref>
+  </AssignVariable>
+  <AssignVariable>
+    <Name>x.scope.bf</Name>
+    <Ref>private.x.scope.vantage</Ref>
+  </AssignVariable>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</AssignMessage>
